@@ -19,7 +19,7 @@ public class UrlDowmLoad {
 	/**
 	 * 文件下载目录
 	 */
-	private static final String FILE_PATH = "c://doutu";
+	private static final String FILE_PATH = "c://doutu3";
 
 	static {
 		File file = new File(FILE_PATH);
@@ -59,7 +59,7 @@ public class UrlDowmLoad {
 						InputStream is = con.getInputStream();  
 						byte[] bs = new byte[1024];  
 						int len;  
-						File sf=new File(FILE_PATH+"//"+firstFileDir+"//"+secondFileDir);  
+						File sf=new File(FILE_PATH+"//"+secondFileDir);  
 						if(!sf.exists()){  
 							sf.mkdirs();  
 						}  
