@@ -8,8 +8,10 @@ import doutu.connection.UrlParse;
 
 public class Run {
 	private static int page = 1;//页码
-	private static int max_page = 10;//最大页码
+	private static int max_page = 5;//最大页码
 	private volatile static boolean isExit = false;
+	
+	
 	public static void main(String[] args) {
 		parseThread();//解析界面的线程方法
 		downloadThread();//下载图片的线程方法
