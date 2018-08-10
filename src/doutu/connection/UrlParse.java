@@ -62,7 +62,10 @@ public class UrlParse {
 			//拿到所有将要访问图片资源的url
 			URL url = new URL(indexModel.getImageUrl());
 			URLConnection connection = url.openConnection();
-			connection.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
+			connection.setRequestProperty("Host", "www.doutula.com");
+			connection.setRequestProperty("Cookie", "__cfduid=d227b668908a38d984ae48543beed5a581517989258; UM_distinctid=1616f34948969-08d8e411d35e81-5e183017-100200-1616f34948a32c; CNZZDATA1266118427=424855970-1520305083-null%7C1520329395; yjs_id=68acb89302e7484f72dd64f897df55d0; ctrl_time=1; XSRF-TOKEN=eyJpdiI6IkpRdFNmUDBXZFl6YVhIbGxkdUJDY1E9PSIsInZhbHVlIjoiZm1GTTBWd1NTcE5YZ2k5WlVhbmF5Sk9HMjdwRmhrcG1BdjJUQlRacTZzNVduSmduY3V2V0ZxZnJxb2l4eUdUQkVleFRPQXk5VUk0K0NWUXEzdUVSXC9RPT0iLCJtYWMiOiI4MGFjMTNkMjk3N2E0OGQ5MDczYzg0YmIwOTlkM2VmNTc2ZjRhZTIwODcxYTcxNGMyODE1MDU3NzljNmFhYjM3In0%3D; doutula_session=eyJpdiI6IkRvOUNTenJIZHBnWm1LbDNIRUdHeGc9PSIsInZhbHVlIjoidEJBaTFKN0thcFVHS2cwTjFiaUVLbnZheTJNYk80T0labFwvSjVRQTRjc1hsM2czbGFEVWJPdDdYUGFIMEROSnE4bnFPeGFGYmVlbEJaYTJhU25YTXpnPT0iLCJtYWMiOiI5NjBhMjc1Y2E2ZGJlNjA4ODRlNjM1ZTQ0Y2Y1N2FlMTE3MjZmZDJhODYzZDIyMzA1ZjJmMWRjNmQzZjNjN2RhIn0%3D; _ga=GA1.2.1472771311.1517989853; _gid=GA1.2.1611081909.1531982145; CNZZDATA1256911977=1006437228-1517987099-http%253A%252F%252Flocalhost%253A8080%252F%7C1531981913");
+			connection.setRequestProperty("Accept","text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8");
+			connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36");
 			InputStream is = connection.getInputStream();
 			byte[] buf = new byte[1024]; 
 			int length = 0 ;
